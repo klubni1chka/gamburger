@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta charset="utf-8">
+ <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+ <meta http-equiv="X-UA-Comatible" content ="ie=edge">
+
+    <title>Loufoque</title>
+    <link rel="stylesheet" href="css/test1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+
+
+</head>
+<body>
+
+    <div class="main">
+
+
+
+        <style>
+            .carousel-item {
+                background-color: #5f5345;
+                height: 100vh;
+                width: available;
+                padding: 20% 20% 20% 20%;
+            }
+            .carousel-item h2 {
+                color: #cccccc;
+            }
+        </style>
+        <form action="/test1" method="post">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                        <h2><%= qA %></h2>
+                        <input type="radio" name="a1" value="2">
+                        <label for="Часто">Часто</label><br>
+                        <input type="radio" name="a1" value="1">
+                        <label for="Иногда">Иногда</label><br>
+                        <input type="radio" name="a1" value="0">
+                        <label for="Никогда">Никогда</label>
+                </div>
+                <div class="carousel-item">
+                    <h2><%= qB %></h2>
+                    <input type="radio" name="a2" value="2">
+                    <label for="Часто">Часто</label><br>
+                    <input type="radio" name="a2" value="1">
+                    <label for="Иногда">Иногда</label><br>
+                    <input type="radio" name="a2" value="0">
+                    <label for="Никогда">Никогда</label>
+                </div>
+                <div class="carousel-item">
+                    <h2><%= qC %></h2>
+                    <input type="radio" name="a3" value="2">
+                    <label for="Часто">Часто</label><br>
+                    <input type="radio" name="a3" value="1">
+                    <label for="Иногда">Иногда</label><br>
+                    <input type="radio" name="a3" value="0">
+                    <label for="Никогда">Никогда</label>
+                </div>
+                <div class="carousel-item">
+                    <h2><%= qD %></h2>
+                    <input type="radio" name="a4" value="2">
+                    <label for="Часто">Часто</label><br>
+                    <input type="radio" name="a4" value="1">
+                    <label for="Иногда">Иногда</label><br>
+                    <input type="radio" name="a4" value="0">
+                    <label for="Никогда">Никогда</label>
+                </div>
+                <div class="carousel-item">
+                    <h2><%= qE %></h2>
+                    <input type="radio" name="a5" value="2">
+                    <label for="Часто">Часто</label><br>
+                    <input type="radio" name="a5" value="1">
+                    <label for="Иногда">Иногда</label><br>
+                    <input type="radio" name="a5" value="0">
+                    <label for="Никогда">Никогда</label> <br><br>
+                    <button type="submit">Отправить</button>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        </form>
+    </div>
+    <script>
+        let myCarousel = document.querySelector('#myCarousel')
+        let carousel = new bootstrap.Carousel(myCarousel, {
+            interval: false,
+            wrap: false
+        })
+    </script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+          <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+          <script src="script\jquery.textillate.js"></script>
+          <script src="js/test1.js"></script>
+
+
+
+
+      </body>
+      </html>
