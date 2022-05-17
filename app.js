@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 3003z;
+const port = 3003;
 const path = require('path');
 const router = express.Router();
 const app = express();
